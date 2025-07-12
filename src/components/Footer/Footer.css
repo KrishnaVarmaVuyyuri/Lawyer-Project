@@ -1,0 +1,50 @@
+.dashboard-footer {
+  background-color: #000;
+  color: #e5e7eb;
+  padding: 40px 0 20px;
+  font-size: 0.95rem;
+}
+
+.footer-top {
+  margin-bottom: 20px;
+  justify-content: space-around;
+}
+
+.dashboard-footer h5,
+.dashboard-footer h6 {
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #e5e7eb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #60a5fa; /* tailwind blue-400 */
+}
+
+.footer-bottom {
+  border-top: 1px solid #374151;
+  padding-top: 15px;
+}
+
+.footer-bottom small {
+  color: #9ca3af; /* tailwind gray-400 */
+}
+
+.dashboard-footer svg {
+  margin-right: 8px;
+  vertical-align: middle;
+}

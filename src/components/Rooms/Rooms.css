@@ -1,0 +1,213 @@
+body {
+  background-color: #f9fafb;
+}
+
+.rooms-input-field,
+.rooms-filter-select {
+  border: 1px solid #ccc !important;
+  border-radius: 6px !important;
+  padding: 8px 12px !important;
+  font-size: 0.95rem !important;
+}
+
+.rooms-table-rounded {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.room-avatar-img {
+  width: 60px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.status-available {
+  color: #2563eb;
+  background-color: #dbeafe;
+  border: 1px solid #93c5fd;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-weight: 500;
+}
+
+.status-occupied {
+  color: #16a34a;
+  background-color: #dcfce7;
+  border: 1px solid #86efac;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-weight: 500;
+}
+
+.status-maintenance {
+  color: #b91c1c;
+  background-color: #fee2e2;
+  border: 1px solid #fca5a5;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-weight: 500;
+}
+.rooms-action-button {
+  min-width: 80px;          /* Ensure same width */
+  text-align: center;
+  font-weight: 600;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px 2px;
+}
+.action-button-edit,
+.action-button-remove {
+  font-weight: 600 !important;
+  border: 1px solid transparent;
+  padding: 4px 12px !important;
+}
+
+.action-button-edit {
+  background-color: white !important;
+  color: #4338ca !important;
+  border-color: #4338ca !important;
+}
+
+.action-button-edit:hover {
+  background-color: #4338ca !important;
+  color: white !important;
+}
+
+.action-button-remove {
+  background-color: white !important;
+  color: #ef4444 !important;
+  border-color: #ef4444 !important;
+}
+
+.action-button-remove:hover {
+  background-color: #ef4444 !important;
+  color: white !important;
+}
+
+.rooms-pagination .page-link {
+  border-radius: 6px !important;
+  padding: 6px 12px !important;
+  margin: 0 4px !important;
+  color: #333;
+  border: 1px solid #ddd;
+  background-color: white;
+}
+
+.rooms-pagination .page-item.active .page-link {
+  background-color: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.rooms-pagination .page-item.disabled .page-link {
+  color: #ccc;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+/* Cancel Button */
+.room-btn-remove-cancel {
+  background-color: #374151 !important;
+  color: white !important;
+  border: 1px solid #374151 !important;
+  padding: 5px 12px !important;
+  font-weight: 600 !important;
+  border-radius: 4px !important;
+  transition: all 0.3s ease;
+}
+
+.room-btn-remove-cancel:hover {
+  background-color: white !important;
+  color: #374151 !important;
+}
+
+/* Delete Button */
+.room-btn-remove-confirm {
+  background-color: #e11d48 !important;
+  color: white !important;
+  border: 1px solid #e11d48 !important;
+  padding: 5px 12px !important;
+  font-weight: 600 !important;
+  border-radius: 4px !important;
+  transition: background-color 0.3s ease;
+}
+
+.room-btn-remove-confirm:hover {
+  background-color: white !important;
+  color: #e11d48 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .rooms-table-rounded td,
+  .rooms-table-rounded th {
+    font-size: 0.9rem;
+    padding: 6px 8px;
+  }
+
+  .rooms-action-button {
+    min-width: 100px;   /* Wider for touch devices */
+    font-size: 0.9rem;
+  }
+
+  .action-button-edit,
+  .action-button-remove {
+    width: 100%;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+  }
+
+  .rooms-input-field,
+  .rooms-filter-select {
+    margin-bottom: 10px;
+  }
+
+  .room-btn-remove-cancel,
+  .room-btn-remove-confirm {
+    width: 100%;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .room-avatar-img {
+    width: 50px;
+    height: 35px;
+  }
+
+.rooms-action-button {
+    width: 100px;
+    font-size: 0.8rem;
+  }
+
+  .rooms-input-field,
+  .rooms-filter-select {
+    font-size: 0.85rem !important;
+    padding: 6px 10px !important;
+  }
+
+  .action-button-edit,
+  .action-button-remove {
+    font-size: 0.8rem;
+    padding: 5px 10px !important;
+  }
+
+  .animated-button {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    margin-top: 8px;
+  }
+
+  .rooms-pagination .page-link {
+    padding: 4px 10px;
+    font-size: 0.85rem;
+  }
+}
+

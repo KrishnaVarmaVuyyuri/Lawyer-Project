@@ -1,0 +1,168 @@
+
+.reception-banner {
+  background-image: url('../../assets/reception-background.jpg');
+  
+  background-size: contain;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.booking-card {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  max-width: 350px;
+  width: 100%;
+  border-left: 5px solid red;
+  color: white;
+  border-radius: 0 10px 10px 0;
+}
+
+.booking-card h2 {
+  margin-bottom: 15px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label, .radio-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.date-input {
+  position: relative;
+}
+
+.calendar-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 16px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.custom-datepicker {
+  width: 100%;
+  padding: 12px 65px 12px 38px; /* padding-left for icon */
+  font-size: 14px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 4px;
+  outline: none;
+  z-index: 1;
+  position: relative;
+}
+
+.custom-datepicker::placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+.book-now-btn {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book-now-btn:hover {
+  background-color: darkred;
+}
+/* Hide the actual radio inputs */
+.radio-group input[type="radio"] {
+  display: none;
+}
+
+/* Style the labels as toggle buttons */
+.radio-label {
+  padding: 8px 18px;
+  border: 1px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: transparent;
+  color: white;
+}
+
+/* Highlight selected radio button */
+.radio-label.active {
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+
+/* Align the buttons horizontally */
+.radio-group {
+  margin: 20px 0;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .navbar-headings{
+  color:white  !important;
+  font-weight: 700;
+} */
+.navbar-headings {
+  color:white !important;
+  font-weight: 600 !important;
+  position: relative;
+  display: inline-block;
+  padding: 10px 0;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  transition:color 10s ease-in !important;
+  text-transform: uppercase;
+}
+
+/* Add two lines */
+.navbar-headings::before,
+.navbar-headings::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: rgb(212, 199, 199);
+  width: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+/* Line above */
+.navbar-headings::before {
+  top: 0;
+}
+
+/* Line below */
+.navbar-headings::after {
+  bottom: 0;
+}
+
+/* On hover, animate lines */
+.navbar-headings:hover::before,
+.navbar-headings:hover::after {
+  width: 100%;
+}

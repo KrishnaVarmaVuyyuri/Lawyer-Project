@@ -1,0 +1,14 @@
+.room-card {
+  transition: transform 0.2s ease;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.room-card:hover {
+  transform: scale(1.02);
+}
+
+.room-card img {
+  object-fit: cover;
+  height: 200px;
+}

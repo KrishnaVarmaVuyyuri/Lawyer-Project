@@ -1,0 +1,333 @@
+/* Page styling */
+.employees-search-filter {
+  margin-bottom: 1.5rem;
+}
+
+.employee-table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Avatar */
+.employee-avatar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.employee-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: #404040;
+  background-color:#94a3b8;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+}
+
+.employee-name-text {
+
+  color: #333;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+/* Status badges */
+.employee-status {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid;
+  border-radius: 6px;
+  width: 100px;
+  text-align: center;
+}
+
+.status-active {
+  background-color: #e9f8ef;
+  border-color: #c3e6cb;
+  color: #218838;
+}
+
+.status-onleave {
+  background-color: #fff7e6;
+  border-color: #ffe58f;
+  color: #d48806;
+}
+
+.status-resigned {
+  background-color: #f0f0f0;
+  border-color: #d9d9d9;
+  color: #8c8c8c;
+}
+
+/* Add button */
+/* Add button responsiveness */
+.animated-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4511e;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 22px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.animated-button span {
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+
+.animated-button span:after {
+  content: "+";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -12px;
+  transition: 0.3s;
+}
+
+.animated-button:hover span {
+  padding-right: 16px;
+}
+
+.animated-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+/* Action buttons */
+.employee-action-button-edit {
+  background-color: white !important;
+  color: #4338ca !important;
+  border: 1px solid #4338ca !important;
+ font-weight: 600 !important;
+}
+
+.employee-action-button-edit:hover {
+  background-color: #4338ca !important;
+  color: white !important;
+}
+
+.employee-action-button-remove {
+  background-color: white !important;
+  color: #ef4444 !important;
+  border: 1px solid #ef4444 !important;
+  font-weight: 600 !important;
+}
+
+.employee-action-button-remove:hover {
+  background-color: #ef4444 !important;
+  color: white !important;
+}
+
+/* Modal buttons */
+.employee-btn-cancel {
+  background-color: #374151 !important;
+  color: white !important;
+  border: 1px solid #374151 !important;
+  padding: 5px 12px !important;
+  font-weight: 600 !important;
+  border-radius: 4px !important;
+  transition: all 0.3s ease;
+}
+
+.employee-btn-cancel:hover {
+  background-color: white !important;
+  color: #374151 !important;
+}
+
+.employee-btn-confirm {
+  background-color: #e11d48 !important;
+  color: white !important;
+  border: 1px solid #e11d48 !important;
+  padding: 5px 12px !important;
+  font-weight: 600 !important;
+  border-radius: 4px !important;
+  transition: background-color 0.3s ease;
+}
+
+.employee-btn-confirm:hover {
+  background-color: white !important;
+  color: #e11d48 !important;
+}
+
+/* Inputs */
+.employee-input {
+  border: 1px solid #333 !important;
+  border-radius: 6px !important;
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  padding: 10px 14px !important;
+  font-size: 0.95rem !important;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+/* Table text alignment */
+.table td,
+.table th {
+  vertical-align: middle;
+}
+/* Base status badge */
+.employee-status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  min-width: 90px;
+  text-align: center;
+}
+
+/* Status: Active */
+.employee-status-badge.active {
+  background-color: #e9f8ef;
+  color: #218838;
+  border-color: #c3e6cb;
+}
+
+/* Status: On Leave */
+.employee-status-badge.on-leave {
+  background-color: #fff7e6;
+  color: #d97706;
+  border-color: #fde68a;
+}
+
+/* Status: Resigned */
+.employee-status-badge.resigned {
+  background-color: #f9e2e3;
+;
+  color: #c73d4a;
+  border-color: #f5c6cb;
+}
+
+.employee-action-button {
+  min-width: 80px;          /* Ensure same width */
+  text-align: center;
+  font-weight: 600;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px 2px;
+}
+
+.employee-action-button-edit {
+  background-color: white !important;
+  color: #4338ca !important;
+  border: 1px solid #4338ca !important;
+}
+
+.employee-action-button-edit:hover {
+  background-color: #4338ca !important;
+  color: white !important;
+}
+
+.employee-action-button-remove {
+  background-color: white !important;
+  color: #ef4444 !important;
+  border: 1px solid #ef4444 !important;
+}
+
+.employee-action-button-remove:hover {
+  background-color: #ef4444 !important;
+  color: white !important;
+}
+
+
+/* Responsive tweaks for employee table */
+@media (max-width: 768px) {
+  .employee-name-cell,
+  .employee-role-cell,
+  .employee-status-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .employee-avatar-wrapper {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .employee-avatar {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+  }
+
+  .employee-name-text {
+    font-size: 0.95rem;
+  }
+
+  .employee-table-rounded td,
+  .employee-table-rounded th {
+    font-size: 0.9rem;
+    padding: 6px 8px;
+  }
+
+  .employee-action-button-edit{
+    width:100%;
+  }
+
+  .employee-action-button {
+    min-width: 100px;   /* Wider for touch devices */
+    font-size: 0.9rem;
+  }
+  .animated-button {
+    padding: 8px 18px;
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 576px) {
+  
+
+
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .employee-action-button {
+    width: 100px;
+    font-size: 0.8rem;
+  }
+
+   .employee-avatar {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
+
+  .employee-name-text {
+    font-size: 0.9rem;
+  }
+
+  .animated-button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    justify-content: center;
+  }
+
+}

@@ -1,0 +1,301 @@
+/* Base container */
+.customers-container {
+  padding: 2rem;
+  background-color: #f0fdf4;
+
+}
+
+/* Input fields */
+.customer-input-field {
+  border: 1px solid #444 !important;
+  border-radius: 6px;
+  padding: 10px 14px;
+  background-color: white;
+  font-size: 0.95rem;
+}
+
+/* Add button */
+.customer-add-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border: none;
+  padding: 10px 20px;
+  background-color: #10b981;
+  color: white;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.customer-add-button:hover {
+  background-color: #059669;
+  transform: translateY(-1px);
+}
+
+/* Table styling */
+.customer-table-rounded {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Badge styling */
+.customer-status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-align: center;
+  width: 90px;
+}
+
+.customer-status-active {
+  background-color: #d1fae5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.customer-status-past {
+  background-color: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+.customer-payment-paid {
+  background-color: #f0fdf4;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}
+
+.customer-payment-unpaid {
+  background-color: #fff1f2;
+  color: #be123c;
+  border: 1px solid #fecdd3;
+}
+
+.customer-action-button {
+  min-width: 80px;          /* Ensure same width */
+  text-align: center;
+  font-weight: 600;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px 2px;
+}
+
+/* Action buttons */
+.customer-action-button-edit {
+  background-color: white !important;
+  color: #4338ca !important;
+  border: 1px solid #4338ca !important;
+  font-weight: 600 !important;
+}
+
+.customer-action-button-edit:hover {
+  background-color: #4338ca !important;
+  color: white !important;
+}
+
+
+
+.customer-action-button-remove {
+  background-color: white !important;
+  color: #dc2626 !important;
+  border: 1px solid #dc2626 !important;
+  font-weight: 600 !important;
+}
+
+.customer-action-button-remove:hover {
+  background-color: #dc2626 !important;
+  color: white !important;
+}
+
+/* Modal Buttons */
+.customer-modal-cancel {
+  background-color: #4b5563 !important;
+  color: white !important;
+  border: 1px solid #4b5563 !important;
+  font-weight: 600;
+}
+
+.customer-modal-cancel:hover {
+  background-color: white !important;
+  color: #4b5563 !important;
+}
+
+.customer-modal-save {
+  background-color: #10b981 !important;
+  color: white !important;
+  border: 1px solid #10b981 !important;
+  font-weight: 600;
+}
+
+.customer-modal-save:hover {
+  background-color: white !important;
+  color: #10b981 !important;
+}
+.customer-btn-remove-cancel {
+  background-color: #374151 !important;
+  color: white !important;
+  border: 1px solid #374151 !important;
+  padding: 5px 12px !important;
+  font-weight: 600 !important;
+  border-radius: 4px !important;
+  transition: all 0.3s ease;
+}
+
+.customer-btn-remove-cancel:hover {
+  background-color: white !important;
+  color: #374151 !important;
+}
+
+.customer-btn-remove-confirm {
+  background-color: #e11d48 !important;
+  color: white !important;
+  border: 1px solid #e11d48 !important;
+  padding: 5px 12px !important;
+  font-weight: 600 !important;
+  border-radius: 4px !important;
+  transition: background-color 0.3s ease;
+}
+
+.customer-btn-remove-confirm:hover {
+  background-color: white !important;
+  color: #e11d48 !important;
+}
+
+.customer-avatar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.customer-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: #404040;
+  background-color:#94a3b8;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+}
+
+.customer-name-text {
+  color: #333;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .customer-input-field,
+  .customer-filter-select {
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+
+  .customer-add-button,
+  .animated-button {
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 0.95rem;
+    margin-top: 10px;
+  }
+
+  .customer-avatar-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .customer-avatar {
+    width: 34px;
+    height: 34px;
+    font-size: 0.9rem;
+  }
+
+  .customer-name-text {
+    font-size: 0.95rem;
+  }
+
+  .table td,
+  .table th {
+    font-size: 0.88rem;
+    padding: 8px 8px;
+  }
+
+  .customer-edit-button,
+  .customer-action-button-remove {
+    width: 48%;
+    font-size: 0.85rem;
+    padding: 6px 0;
+    display: inline-block;
+  }
+
+  td:last-child {
+    display: flex;
+    gap: 4%;
+    flex-wrap: wrap;
+  }
+
+  .customer-btn-remove-cancel,
+  .customer-btn-remove-confirm {
+    width: 48%;
+    font-size: 0.9rem;
+  }
+
+  .status-badge {
+    min-width: 80px;
+    font-size: 0.8rem;
+  }
+
+  .customer-action-button {
+    min-width: 100px;   /* Wider for touch devices */
+    font-size: 0.9rem;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .customer-avatar {
+    width: 30px;
+    height: 30px;
+    font-size: 0.85rem;
+  }
+
+  .customer-name-text {
+    font-size: 0.9rem;
+  }
+
+  .customer-edit-button,
+  .customer-action-button-remove {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  .customer-input-field,
+  .customer-filter-select {
+    font-size: 0.85rem;
+    padding: 8px 10px;
+  }
+
+  .pagination .page-link {
+    padding: 5px 10px;
+    font-size: 0.85rem;
+  }
+
+  .customer-action-button {
+    width: 100px;
+    font-size: 0.8rem;
+  }
+}
